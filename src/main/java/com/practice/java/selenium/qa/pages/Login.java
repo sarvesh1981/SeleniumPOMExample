@@ -19,6 +19,7 @@ public class Login extends TestBase{
 	WebDriverWait wait;
 	JavascriptExecutor js =(JavascriptExecutor) driver;
 	
+	
 	@FindBy(id="lst-ib")
 	WebElement searchBox;
 	
