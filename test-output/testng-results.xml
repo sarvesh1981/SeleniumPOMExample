@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="15497" started-at="2018-05-13T08:57:33Z" finished-at="2018-05-13T08:57:49Z">
+    <groups>
+    </groups>
+    <test name="Nopackage" duration-ms="15497" started-at="2018-05-13T08:57:33Z" finished-at="2018-05-13T08:57:49Z">
+      <class name="com.practice.java.selenium.seleniumpomexample.LoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.practice.java.selenium.seleniumpomexample.LoginTest@5e5792a0]" name="setUp" duration-ms="8293" started-at="2018-05-13T08:57:33Z" finished-at="2018-05-13T08:57:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="enterSearchTest(java.lang.String)[pri:0, instance:com.practice.java.selenium.seleniumpomexample.LoginTest@5e5792a0]" name="enterSearchTest" duration-ms="314" started-at="2018-05-13T08:57:41Z" depends-on-methods="com.practice.java.selenium.seleniumpomexample.LoginTest.setUp" finished-at="2018-05-13T08:57:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[selenium webdriver]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterSearchTest -->
+        <test-method status="PASS" signature="clickSearchBtnTest()[pri:0, instance:com.practice.java.selenium.seleniumpomexample.LoginTest@5e5792a0]" name="clickSearchBtnTest" duration-ms="6006" started-at="2018-05-13T08:57:42Z" depends-on-methods="com.practice.java.selenium.seleniumpomexample.LoginTest.enterSearchTest" finished-at="2018-05-13T08:57:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSearchBtnTest -->
+        <test-method status="PASS" signature="quitWebDriver()[pri:0, instance:com.practice.java.selenium.seleniumpomexample.LoginTest@5e5792a0]" name="quitWebDriver" duration-ms="814" started-at="2018-05-13T08:57:48Z" depends-on-methods="com.practice.java.selenium.seleniumpomexample.LoginTest.clickSearchBtnTest" finished-at="2018-05-13T08:57:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitWebDriver -->
+      </class> <!-- com.practice.java.selenium.seleniumpomexample.LoginTest -->
+    </test> <!-- Nopackage -->
+  </suite> <!-- Suite1 -->
+</testng-results>

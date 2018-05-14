@@ -1,0 +1,5 @@
+com\practice\java\selenium\qa\base\TestBase.class
+com\practice\java\selenium\qa\pages\Login.class
+com\practice\java\selenium\qa\utils\TestUtils.class
+com\practice\java\selenium\seleniumpomexample\ReapPropFile.class
+com\practice\java\selenium\seleniumpomexample\App.class
