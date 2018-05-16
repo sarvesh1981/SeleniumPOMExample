@@ -14,10 +14,18 @@ public class TestBase {
 
 	static Properties prop;	
 	protected static WebDriver driver;
-	String dir = System.getProperty("user.dir");
+	//String dir = System.getProperty("user.dir");
+	
+	public static void waitFor() {
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 	
 	public TestBase(){
-		System.out.println("********************CONSTRUCTOR************************");
 		/*try( FileInputStream io=new FileInputStream(System.getProperty(dir+"\\src\\main\\java\\com\\practice\\java\\selenium\\files\\credential.properties"))
 			)*/try{
 			
@@ -25,16 +33,13 @@ public class TestBase {
 			System.out.println("dir - "+dir);
 			FileInputStream io = new FileInputStream(dir+"\\src\\main\\java\\com\\practice\\java\\selenium\\files\\credential.properties");
 		prop = new Properties();
-		prop.load(io);
-		System.out.println("********************CONSTRUCTOR End************************");
+		prop.load(io);		
 	}catch(IOException ex) {
-		System.out.println("********************CONSTRUCTOR exception************************");
 		ex.printStackTrace();
 	}
 	}
 	
-	public void init(){		
-		System.out.println("********************INIT************************"+prop.getProperty("browser"));
+	public void init(){	
 		switch(prop.getProperty("browser")) {
 		case "chrome" :
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\sarvsinh\\Documents\\seleniumbrowserdrivers\\chromedriver.exe");
@@ -50,7 +55,7 @@ public class TestBase {
 		
 		driver.manage().timeouts().implicitlyWait(TestUtils.IMPLICITILYWAIT, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		driver.get(prop.getProperty("url"));
+		//driver.get(prop.getProperty("url"));
 	}
 	
 	public void deleteCookies() {

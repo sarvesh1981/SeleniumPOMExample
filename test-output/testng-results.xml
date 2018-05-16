@@ -1,36 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="15497" started-at="2018-05-13T08:57:33Z" finished-at="2018-05-13T08:57:49Z">
+  <suite name="Suite1" duration-ms="28685" started-at="2018-05-16T03:54:42Z" finished-at="2018-05-16T03:55:10Z">
     <groups>
     </groups>
-    <test name="Nopackage" duration-ms="15497" started-at="2018-05-13T08:57:33Z" finished-at="2018-05-13T08:57:49Z">
-      <class name="com.practice.java.selenium.seleniumpomexample.LoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.practice.java.selenium.seleniumpomexample.LoginTest@5e5792a0]" name="setUp" duration-ms="8293" started-at="2018-05-13T08:57:33Z" finished-at="2018-05-13T08:57:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="enterSearchTest(java.lang.String)[pri:0, instance:com.practice.java.selenium.seleniumpomexample.LoginTest@5e5792a0]" name="enterSearchTest" duration-ms="314" started-at="2018-05-13T08:57:41Z" depends-on-methods="com.practice.java.selenium.seleniumpomexample.LoginTest.setUp" finished-at="2018-05-13T08:57:42Z">
+    <test name="Nopackage" duration-ms="28685" started-at="2018-05-16T03:54:42Z" finished-at="2018-05-16T03:55:10Z">
+      <class name="com.practice.java.selenium.seleniumpomexample.AmazonHomeTest">
+        <test-method status="PASS" signature="initilize(java.lang.String)[pri:0, instance:com.practice.java.selenium.seleniumpomexample.AmazonHomeTest@68c4039c]" name="initilize" duration-ms="13171" started-at="2018-05-16T03:54:42Z" finished-at="2018-05-16T03:54:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[selenium webdriver]]>
+                <![CDATA[https://www.amazon.com]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- enterSearchTest -->
-        <test-method status="PASS" signature="clickSearchBtnTest()[pri:0, instance:com.practice.java.selenium.seleniumpomexample.LoginTest@5e5792a0]" name="clickSearchBtnTest" duration-ms="6006" started-at="2018-05-13T08:57:42Z" depends-on-methods="com.practice.java.selenium.seleniumpomexample.LoginTest.enterSearchTest" finished-at="2018-05-13T08:57:48Z">
+        </test-method> <!-- initilize -->
+        <test-method status="PASS" signature="selectDepartmenr(java.lang.String)[pri:0, instance:com.practice.java.selenium.seleniumpomexample.AmazonHomeTest@68c4039c]" name="selectDepartmenr" duration-ms="7" started-at="2018-05-16T03:54:55Z" depends-on-methods="com.practice.java.selenium.seleniumpomexample.AmazonHomeTest.initilize" finished-at="2018-05-16T03:54:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Baby]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectDepartmenr -->
+        <test-method status="PASS" signature="enterSearchTextTest(java.lang.String)[pri:0, instance:com.practice.java.selenium.seleniumpomexample.AmazonHomeTest@68c4039c]" name="enterSearchTextTest" duration-ms="6" started-at="2018-05-16T03:54:55Z" depends-on-methods="com.practice.java.selenium.seleniumpomexample.AmazonHomeTest.selectDepartmenr" finished-at="2018-05-16T03:54:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cloth]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterSearchTextTest -->
+        <test-method status="PASS" signature="clickSearchBtnTest()[pri:0, instance:com.practice.java.selenium.seleniumpomexample.AmazonHomeTest@68c4039c]" name="clickSearchBtnTest" duration-ms="8" started-at="2018-05-16T03:54:55Z" depends-on-methods="com.practice.java.selenium.seleniumpomexample.AmazonHomeTest.enterSearchTextTest" finished-at="2018-05-16T03:54:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickSearchBtnTest -->
-        <test-method status="PASS" signature="quitWebDriver()[pri:0, instance:com.practice.java.selenium.seleniumpomexample.LoginTest@5e5792a0]" name="quitWebDriver" duration-ms="814" started-at="2018-05-13T08:57:48Z" depends-on-methods="com.practice.java.selenium.seleniumpomexample.LoginTest.clickSearchBtnTest" finished-at="2018-05-13T08:57:49Z">
+        <test-method status="PASS" signature="clickCartTest()[pri:0, instance:com.practice.java.selenium.seleniumpomexample.AmazonHomeTest@68c4039c]" name="clickCartTest" duration-ms="4" started-at="2018-05-16T03:54:55Z" depends-on-methods="com.practice.java.selenium.seleniumpomexample.AmazonHomeTest.clickSearchBtnTest" finished-at="2018-05-16T03:54:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCartTest -->
+        <test-method status="PASS" signature="hoverlinks()[pri:0, instance:com.practice.java.selenium.seleniumpomexample.AmazonHomeTest@68c4039c]" name="hoverlinks" duration-ms="12" started-at="2018-05-16T03:54:55Z" depends-on-methods="com.practice.java.selenium.seleniumpomexample.AmazonHomeTest.clickCartTest" finished-at="2018-05-16T03:54:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hoverlinks -->
+        <test-method status="PASS" signature="clickAmazonLogoTest()[pri:0, instance:com.practice.java.selenium.seleniumpomexample.AmazonHomeTest@68c4039c]" name="clickAmazonLogoTest" duration-ms="2155" started-at="2018-05-16T03:54:55Z" depends-on-methods="com.practice.java.selenium.seleniumpomexample.AmazonHomeTest.hoverlinks" finished-at="2018-05-16T03:54:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAmazonLogoTest -->
+        <test-method status="PASS" signature="clickDeliverToTest(java.lang.String)[pri:0, instance:com.practice.java.selenium.seleniumpomexample.AmazonHomeTest@68c4039c]" name="clickDeliverToTest" duration-ms="12265" started-at="2018-05-16T03:54:57Z" depends-on-methods="com.practice.java.selenium.seleniumpomexample.AmazonHomeTest.clickAmazonLogoTest" finished-at="2018-05-16T03:55:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[60004]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickDeliverToTest -->
+        <test-method status="PASS" signature="quitWebDriver()[pri:0, instance:com.practice.java.selenium.seleniumpomexample.AmazonHomeTest@68c4039c]" name="quitWebDriver" duration-ms="919" started-at="2018-05-16T03:55:10Z" depends-on-methods="com.practice.java.selenium.seleniumpomexample.AmazonHomeTest.clickDeliverToTest" finished-at="2018-05-16T03:55:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitWebDriver -->
-      </class> <!-- com.practice.java.selenium.seleniumpomexample.LoginTest -->
+      </class> <!-- com.practice.java.selenium.seleniumpomexample.AmazonHomeTest -->
     </test> <!-- Nopackage -->
   </suite> <!-- Suite1 -->
 </testng-results>

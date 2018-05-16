@@ -2,15 +2,23 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
   <test thread-count="5" name="Nopackage(failed)">
+    <parameter name="searchText" value="cloth"/>
+    <parameter name="department" value="Baby"/>
+    <parameter name="url" value="https://www.amazon.com"/>
     <classes>
-      <class name="com.practice.java.selenium.seleniumpomexample.LoginTest">
+      <class name="com.practice.java.selenium.seleniumpomexample.AmazonHomeTest">
         <methods>
-          <include name="enterSearchTest"/>
           <include name="clickSearchBtnTest"/>
           <include name="quitWebDriver"/>
-          <include name="setUp"/>
+          <include name="clickAmazonLogoTest"/>
+          <include name="initilize"/>
+          <include name="clickDeliverToTest"/>
+          <include name="clickCartTest"/>
+          <include name="enterSearchTextTest"/>
+          <include name="hoverlinks"/>
+          <include name="selectDepartmenr"/>
         </methods>
-      </class> <!-- com.practice.java.selenium.seleniumpomexample.LoginTest -->
+      </class> <!-- com.practice.java.selenium.seleniumpomexample.AmazonHomeTest -->
     </classes>
   </test> <!-- Nopackage(failed) -->
 </suite> <!-- Failed suite [Suite1] -->
