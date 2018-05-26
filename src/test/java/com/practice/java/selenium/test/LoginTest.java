@@ -1,4 +1,4 @@
-package com.practice.java.selenium.seleniumpomexample;
+package com.practice.java.selenium.test;
 
 
 

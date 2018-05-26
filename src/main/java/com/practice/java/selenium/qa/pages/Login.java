@@ -1,6 +1,7 @@
 package com.practice.java.selenium.qa.pages;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -33,6 +34,8 @@ public class Login extends TestBase{
 	}
 	public void enterSearchText(String value) {
 		searchBox.sendKeys(value);
+		searchBox.sendKeys(Keys.F5);
+		
 	}
 	
 	public void clickSearchBtn() {

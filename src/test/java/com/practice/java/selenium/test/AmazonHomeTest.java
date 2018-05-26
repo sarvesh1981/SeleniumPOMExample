@@ -1,4 +1,4 @@
-package com.practice.java.selenium.seleniumpomexample;
+package com.practice.java.selenium.test;
 
 import com.practice.java.selenium.qa.base.TestBase;
 import com.practice.java.selenium.qa.pages.AmazonHomePage;
@@ -25,25 +25,25 @@ public class AmazonHomeTest extends TestBase {
 	@Parameters("department")
 	public void selectDepartmenr(String department) {
 		
-		/*ahp.waitforAllDepartmentElementTest();
-		ahp.selectDepertment(department);*/
+		ahp.waitforAllDepartmentElementTest();
+		ahp.selectDepertment(department);
 	}
 	
 	@Test(dependsOnMethods="selectDepartmenr")
 	@Parameters("searchText")
 	public void enterSearchTextTest(String searchText) {
-		//ahp.enterSearchData(searchText);
+		ahp.enterSearchData(searchText);
 	}
 	
 	@Test(dependsOnMethods="enterSearchTextTest")
 	public void clickSearchBtnTest() throws InterruptedException {
-		/*ahp.clickSearch();
-		Thread.sleep(5000);*/
+		ahp.clickSearch();
+		Thread.sleep(5000);
 	}
 	
 	@Test(dependsOnMethods="clickSearchBtnTest")
 	public void clickCartTest() {
-		//ahp.clickCart();
+		ahp.clickCart();
 	}
 	
 	@Test(dependsOnMethods="clickCartTest")
