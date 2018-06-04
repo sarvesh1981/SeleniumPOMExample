@@ -12,6 +12,11 @@ import com.practice.java.selenium.qa.utils.TestUtils;
 
 public class TestBase {
 
+	String localMyDocumentPath = System.getenv("USERPROFILE") + "\\My Documents\\";
+	/*public static void main(String[] args) {
+		TestBase tb=new TestBase();
+	}*/
+	
 	static Properties prop;	
 	protected static WebDriver driver;
 	//String dir = System.getProperty("user.dir");
@@ -28,7 +33,7 @@ public class TestBase {
 	public TestBase(){
 		/*try( FileInputStream io=new FileInputStream(System.getProperty(dir+"\\src\\main\\java\\com\\practice\\java\\selenium\\files\\credential.properties"))
 			)*/try{
-			
+			System.out.println(System.getenv("USERPROFILE") + "\\My Documents\\");
 			String dir = System.getProperty("user.dir");
 			System.out.println("dir - "+dir);
 			FileInputStream io = new FileInputStream(dir+"\\src\\main\\java\\com\\practice\\java\\selenium\\files\\credential.properties");
@@ -42,11 +47,11 @@ public class TestBase {
 	public void init(){	
 		switch(prop.getProperty("browser")) {
 		case "chrome" :
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\sarvsinh\\Documents\\seleniumbrowserdrivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", localMyDocumentPath+"seleniumbrowserdrivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 			break;
 		case "firefox" :
-			System.setProperty("webdriver.firefox.marionette", "C:\\Users\\sarvsinh\\Documents\\seleniumbrowserdrivers\\geckodriver.exe");
+			System.setProperty("webdriver.firefox.marionette", localMyDocumentPath+"seleniumbrowserdrivers\\geckodriver.exe");
 			driver = new ChromeDriver();
 			break;
 		case "default" :
