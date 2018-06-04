@@ -20,8 +20,7 @@ public class BrokenLinkTest extends TestBase {/*
 	}
 	
 	@Test(alwaysRun=true)
-	public void initilizeBase() {
-		
+	public void initilizeBase() {		
 		init();
 		
 	}
