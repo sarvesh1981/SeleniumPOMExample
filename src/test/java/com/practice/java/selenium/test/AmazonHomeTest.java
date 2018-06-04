@@ -15,7 +15,7 @@ public class AmazonHomeTest extends TestBase {
 	
 	@Test(alwaysRun=true)
 	@Parameters("url")
-	public void initilize(String url) {
+	public void initilize(@Optional("http://www.google.com") String url) {
 		init();
 		driver.get(url);
 		ahp= new AmazonHomePage();
