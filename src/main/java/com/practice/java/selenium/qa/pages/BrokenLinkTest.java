@@ -1,16 +1,5 @@
 package com.practice.java.selenium.qa.pages;
 
-import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.Iterator;
-import java.util.List;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.testng.annotations.Test;
-
 import com.practice.java.selenium.qa.base.TestBase;
 public class BrokenLinkTest extends TestBase {/*
 	
