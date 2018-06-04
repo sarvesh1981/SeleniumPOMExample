@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="23464" started-at="2018-05-20T06:33:06Z" finished-at="2018-05-20T06:33:30Z">
+  <suite name="Default suite" duration-ms="21163" started-at="2018-06-04T20:53:43Z" finished-at="2018-06-04T20:54:04Z">
     <groups>
     </groups>
-    <test name="Nopackage" duration-ms="23464" started-at="2018-05-20T06:33:06Z" finished-at="2018-05-20T06:33:30Z">
+    <test name="Default test" duration-ms="21163" started-at="2018-06-04T20:53:43Z" finished-at="2018-06-04T20:54:04Z">
       <class name="com.practice.java.selenium.qa.pages.BrokenLinkTest">
-        <test-method status="PASS" signature="initilizeBase()[pri:0, instance:com.practice.java.selenium.qa.pages.BrokenLinkTest@26653222]" name="initilizeBase" duration-ms="6772" started-at="2018-05-20T06:33:06Z" finished-at="2018-05-20T06:33:13Z">
+        <test-method status="PASS" signature="initilizeBase()[pri:0, instance:com.practice.java.selenium.qa.pages.BrokenLinkTest@3ffc5af1]" name="initilizeBase" duration-ms="6552" started-at="2018-06-04T20:53:43Z" finished-at="2018-06-04T20:53:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilizeBase -->
-        <test-method status="FAIL" signature="verifyBrokenLink()[pri:0, instance:com.practice.java.selenium.qa.pages.BrokenLinkTest@26653222]" name="verifyBrokenLink" duration-ms="16641" started-at="2018-05-20T06:33:13Z" depends-on-methods="com.practice.java.selenium.qa.pages.BrokenLinkTest.initilizeBase" finished-at="2018-05-20T06:33:30Z">
+        <test-method status="FAIL" signature="verifyBrokenLink()[pri:0, instance:com.practice.java.selenium.qa.pages.BrokenLinkTest@3ffc5af1]" name="verifyBrokenLink" duration-ms="14531" started-at="2018-06-04T20:53:50Z" depends-on-methods="com.practice.java.selenium.qa.pages.BrokenLinkTest.initilizeBase" finished-at="2018-06-04T20:54:04Z">
           <exception class="java.net.MalformedURLException">
             <message>
               <![CDATA[unknown protocol: javascript]]>
@@ -54,6 +54,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- verifyBrokenLink -->
       </class> <!-- com.practice.java.selenium.qa.pages.BrokenLinkTest -->
-    </test> <!-- Nopackage -->
-  </suite> <!-- Suite1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

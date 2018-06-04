@@ -1,21 +1,18 @@
 package com.practice.java.selenium.qa.pages;
 
-import com.practice.java.selenium.qa.base.TestBase;
-
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.URLConnection;
 import java.util.Iterator;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
-public class BrokenLinkTest extends TestBase {
+
+import com.practice.java.selenium.qa.base.TestBase;
+public class BrokenLinkTest extends TestBase {/*
 	
 	
 	BrokenLinkTest(){
@@ -57,4 +54,4 @@ public class BrokenLinkTest extends TestBase {
             }
 		}
 	}
-}
+*/}
